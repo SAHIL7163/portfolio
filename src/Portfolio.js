@@ -152,7 +152,7 @@ const Portfolio = () => {
       email: "sahildhameja13@gmail.com",
       phone: "+91 9724747163",
       linkedin: "https://linkedin.com/in/sahil-dhameja",
-      code: "https://github.com.com/SAHIL7163",
+      code: "https://github.com/SAHIL7163",
       location: "Mumbai, Maharashtra",
     },
     about:
