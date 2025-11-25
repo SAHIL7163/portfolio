@@ -147,8 +147,7 @@ const Portfolio = () => {
   // Resume Data (kept constant)
   const portfolioData = {
     name: "Sahil Dhameja",
-    role: "Associate Software Developer",
-    tagline: "Building Scalable Backend Systems & Web Solutions",
+    role: "Software Developer",
     contact: {
       email: "sahildhameja13@gmail.com",
       phone: "+91 9724747163",
@@ -157,7 +156,7 @@ const Portfolio = () => {
       location: "Mumbai, Maharashtra",
     },
     about:
-      "I am a Software Developer with a strong foundation in building scalable, distributed systems. Currently working at ASQI, I specialize in solving complex backend challenges using Python, Django, and PostgreSQL, while also delivering seamless front-end experiences with React. My passion lies in optimizing database performance, architecting microservices, and solving algorithmic problems.",
+      "I am a Software Engineer at ASQI, Mumbai, graduated from NIT Surat in 2025. I build scalable full-stack systems using Python, Django REST Framework, React, PostgreSQL, Redis, Celery, Kafka, and Docker. At ASQI, I’ve delivered production features reaching 5,000+ farmers, including multilingual WhatsApp weather alerts, large-scale soil data crawlers (30K+ records), and 40% faster database performance. I also built Talksy — a real-time video platform with Kafka-backed messaging (120ms → 30ms latency) and a RAG-powered AI assistant. With 850+ LeetCode problems solved and a peak rating of 1840, I’m passionate about clean architecture and shipping impactful code.",
     education: [
       {
         id: 1,
@@ -462,7 +461,6 @@ const Portfolio = () => {
     const cleanData = {
       name: portfolioData.name,
       role: portfolioData.role,
-      tagline: portfolioData.tagline,
       contact: portfolioData.contact,
       about: portfolioData.about,
       education: portfolioData.education,
@@ -785,16 +783,6 @@ const Portfolio = () => {
                 >
                   {portfolioData.role}
                 </h2>
-              </FadeIn>
-
-              <FadeIn delay={400}>
-                <p
-                  className={`text-lg max-w-xl leading-relaxed mx-auto md:mx-0 ${getThemeClasses(
-                    "subText"
-                  )}`}
-                >
-                  {portfolioData.tagline}
-                </p>
               </FadeIn>
 
               <FadeIn delay={500}>
