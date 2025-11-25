@@ -358,7 +358,7 @@ const Portfolio = () => {
 
         links: {
           demo: "https://talksy-frontend.vercel.app/",
-          code: "https://code.com/SAHIL7163/talksy-microservices",
+          code: "https://github.com/SAHIL7163/talksy-microservices",
         },
         featured: true,
       },
@@ -389,7 +389,7 @@ const Portfolio = () => {
 
         links: {
           demo: "https://blogsite-3gsy.onrender.com/",
-          code: "https://code.com/SAHIL7163/DailyDoseBlog",
+          code: "https://github.com/SAHIL7163/DailyDoseBlog",
         },
         featured: false,
       },
@@ -1340,6 +1340,7 @@ const Portfolio = () => {
                         <a
                           href={project.links.code}
                           target="_blank"
+                          rel="noreferrer"
                           className={`p-2 rounded-full transition-colors hover:scale-110 duration-300 ${
                             theme === "dark"
                               ? "bg-slate-800 hover:bg-white hover:text-slate-900"
@@ -1352,6 +1353,7 @@ const Portfolio = () => {
                         <a
                           href={project.links.demo}
                           target="_blank"
+                          rel="noreferrer"
                           className={`p-2 rounded-full transition-colors hover:scale-110 duration-300 ${
                             theme === "dark"
                               ? "bg-slate-800 hover:bg-cyan-400 hover:text-slate-900"
