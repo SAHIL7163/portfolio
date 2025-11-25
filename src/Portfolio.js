@@ -1685,11 +1685,11 @@ const Portfolio = () => {
 
       {/* Floating Chat Widget */}
       <div
-        className={`fixed bottom-4 right-4 sm:bottom-2 sm:right-2 z-50 transition-all duration-300 ${
+        className={`fixed bottom-8 right-16 sm:bottom-8 sm:right-20 z-50 transition-all duration-300 ${
           isChatOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"
-        }`}
+        } ${scrolled ? "right-20 sm:right-20" : "right-3 sm:right-6"}`}
       >
         <div
           className={`w-80 md:w-96 sm:w-[90%] rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[500px] ${
@@ -1806,7 +1806,9 @@ const Portfolio = () => {
       {!isChatOpen && (
         <button
           onClick={() => setIsChatOpen(true)}
-          className="fixed bottom-8 right-20 p-3 bg-gradient-to-r from-purple-600 to-cyan-600 text-white rounded-full shadow-lg shadow-cyan-900/20 hover:scale-110 transition-all duration-300 z-50 animate-bounce-slow"
+          className={`fixed bottom-8 p-3 bg-gradient-to-r from-purple-600 to-cyan-600 text-white rounded-full shadow-lg shadow-cyan-900/20 hover:scale-110 transition-all duration-300 z-50 animate-bounce-slow ${
+            scrolled ? "right-20 sm:right-20" : "right-3 sm:right-6"
+          }`}
         >
           <MessageSquare size={24} />
         </button>
@@ -1815,7 +1817,7 @@ const Portfolio = () => {
       {/* Scroll Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-8 right-6 p-3 rounded-full shadow-lg transition-all duration-300 z-50 border ${
+        className={`fixed bottom-8 right-2 sm:right-6 p-3 rounded-full shadow-lg transition-all duration-300 z-50 border ${
           scrolled
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10 pointer-events-none"
