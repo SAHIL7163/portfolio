@@ -152,7 +152,7 @@ const Portfolio = () => {
       email: "sahildhameja13@gmail.com",
       phone: "+91 9724747163",
       linkedin: "https://linkedin.com/in/sahil-dhameja",
-      code: "https://code.com/SAHIL7163",
+      code: "https://github.com.com/SAHIL7163",
       location: "Mumbai, Maharashtra",
     },
     about:
@@ -1805,21 +1805,21 @@ const Portfolio = () => {
       )}
 
       {/* Scroll Top Button */}
-      {!isChatOpen && ( <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-8 right-2 sm:right-6 p-3 rounded-full shadow-lg transition-all duration-300 z-50 border ${
-          scrolled
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-10 pointer-events-none"
-        } ${
-          theme === "dark"
-            ? "bg-slate-800 text-slate-300 hover:text-white border-slate-700"
-            : "bg-slate-200 text-slate-700 hover:text-slate-900 border-slate-300"
-        }`}
-      >
-        
-        <ChevronDown size={24} className="transform rotate-180" />
-      </button>
+      {!isChatOpen && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className={`fixed bottom-8 right-2 sm:right-6 p-3 rounded-full shadow-lg transition-all duration-300 z-50 border ${
+            scrolled
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10 pointer-events-none"
+          } ${
+            theme === "dark"
+              ? "bg-slate-800 text-slate-300 hover:text-white border-slate-700"
+              : "bg-slate-200 text-slate-700 hover:text-slate-900 border-slate-300"
+          }`}
+        >
+          <ChevronDown size={24} className="transform rotate-180" />
+        </button>
       )}
     </div>
   );
