@@ -1675,11 +1675,11 @@ const Portfolio = () => {
 
       {/* Floating Chat Widget */}
       <div
-        className={`fixed bottom-8 right-16 sm:bottom-8 sm:right-20 z-50 transition-all duration-300 ${
+        className={`fixed bottom-8 right-8 sm:bottom-8 sm:right-8 z-50 transition-all duration-300 ${
           isChatOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"
-        } ${scrolled ? "right-20 sm:right-20" : "right-3 sm:right-6"}`}
+        }`}
       >
         <div
           className={`w-80 md:w-96 sm:w-[90%] rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[500px] ${
@@ -1805,7 +1805,7 @@ const Portfolio = () => {
       )}
 
       {/* Scroll Top Button */}
-      <button
+      {!isChatOpen && ( <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className={`fixed bottom-8 right-2 sm:right-6 p-3 rounded-full shadow-lg transition-all duration-300 z-50 border ${
           scrolled
@@ -1817,8 +1817,10 @@ const Portfolio = () => {
             : "bg-slate-200 text-slate-700 hover:text-slate-900 border-slate-300"
         }`}
       >
+        
         <ChevronDown size={24} className="transform rotate-180" />
       </button>
+      )}
     </div>
   );
 };
